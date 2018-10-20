@@ -4,13 +4,7 @@ import { RENDER_TYPE } from 'ember-mobiledoc-dom-renderer';
 import layout from '../templates/components/render-mobiledoc';
 import { getDocument } from '../utils/document';
 import assign from '../utils/polyfilled-assign';
-
-const {
-  assert,
-  computed,
-  run: { join },
-  uuid
-} = Ember;
+import { computed } from '@ember/object';
 
 const ADD_CARD_HOOK             = 'addComponentCard';
 const REMOVE_CARD_HOOK          = 'removeComponentCard';
@@ -74,7 +68,7 @@ export default Ember.Component.extend({
 
   didReceiveAttrs() {
     let mobiledoc = this.get('mobiledoc');
-    assert(`Must pass mobiledoc to render-mobiledoc component`, !!mobiledoc);
+    console.assert(`Must pass mobiledoc to render-mobiledoc component`, !!mobiledoc);
 
     if (this._teardownRender) {
       this._teardownRender();
@@ -207,9 +201,9 @@ export default Ember.Component.extend({
   },
 
   removeCard(card) {
-    join(() => {
+    //join(() => {
       this.get('_componentCards').removeObject(card);
-    });
+    //});
   },
 
   addAtom(atom) {
@@ -217,13 +211,14 @@ export default Ember.Component.extend({
   },
 
   removeAtom(atom) {
-    join(() => {
+    //join(() => {
       this.get('_componentAtoms').removeObject(atom);
-    });
+    //});
   },
 
   generateUuid() {
-    return `${UUID_PREFIX}${uuid()}`;
+    let random = Math.random() * 1000000;
+    return `${UUID_PREFIX}${random}`;
   },
 
   _createElement(dom, tagName, classNames=[]) {
