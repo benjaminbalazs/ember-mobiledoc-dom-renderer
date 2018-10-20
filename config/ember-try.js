@@ -1,74 +1,3 @@
-<<<<<<< HEAD
-/*jshint node:true*/
-module.exports = {
-  scenarios: [
-    {
-      name: '1.13',
-      bower: {
-        dependencies: {
-          "ember": "^1.13"
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-lts-2.4',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#lts-2-4'
-        },
-        resolutions: {
-          'ember': 'lts-2-4'
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-lts-2.8',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#lts-2-8'
-        },
-        resolutions: {
-          'ember': 'lts-2-8'
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-lts-2.12',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#2.12.2'
-        },
-        resolutions: {
-          'ember': '2.12.2'
-        }
-      },
-      npm: {
-        devDependencies: {
-          'ember-source': null
-        }
-      }
-    },
-    {
-      name: 'ember-release',
-      bower: {
-        dependencies: {
-          'ember': 'components/ember#release'
-=======
 'use strict';
 
 const getChannelURL = require('ember-source-channel-url');
@@ -104,7 +33,6 @@ module.exports = function() {
               'ember-source': '~2.18.0'
             }
           }
->>>>>>> 7c49161... message
         },
         {
           name: 'ember-release',
@@ -149,20 +77,7 @@ module.exports = function() {
             }
           }
         }
-<<<<<<< HEAD
-      }
-    },
-    {
-      name: 'fastboot-addon-tests',
-      command: 'ember fastboot:test',
-      bower: {
-        dependencies: {}
-      }
-    }
-  ]
-=======
       ]
     };
   });
->>>>>>> 7c49161... message
 };

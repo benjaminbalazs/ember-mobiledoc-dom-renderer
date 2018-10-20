@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ember-mobiledoc-dom-renderer
 [![Build Status](https://travis-ci.org/bustlelabs/ember-mobiledoc-dom-renderer.svg?branch=master)](https://travis-ci.org/bustlelabs/ember-mobiledoc-dom-renderer)
 
@@ -6,19 +5,13 @@ Provides:
 
   * Component `{{render-mobiledoc}}` for rendering mobiledoc in your ember app
   * (For advanced use) The ability to import the [`mobiledoc-dom-renderer`](https://github.com/bustlelabs/mobiledoc-dom-renderer) class
-  
+
 To learn more about mobiledoc see [mobiledoc-kit](https://github.com/bustlelabs/mobiledoc-kit).
 =======
-my-addon
-==============================================================================
-
-[Short description of the addon.]
->>>>>>> 7c49161... message
 
 Installation
 ------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 * `ember install ember-mobiledoc-dom-renderer`
 
 ### Usage

@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import Renderer from 'ember-mobiledoc-dom-renderer';
 import { RENDER_TYPE } from 'ember-mobiledoc-dom-renderer';
 import layout from '../templates/components/render-mobiledoc';
